@@ -85,35 +85,35 @@ Stops the animation when the user hovers over a slide. Animation resumes on mous
 Type `Float | String`
 Default `7`
 
-How long each slide should stay visible. For milliseconds use a string ending in `'ms'`.
+How long each slide should stay visible. For milliseconds use a string ending in `'ms'`
 
 #### animationDur
 Type `Float | String`
 Default `2`
 
-How long transitions from one slide to the next should take. For milliseconds use a string ending in `'ms'`.
+How long transitions from one slide to the next should take. For milliseconds use a string ending in `'ms'`
 
 #### timingFunc
 Type `String`
 Default `'cubic-bezier(0.75,0,0.3,1)'`
 
 Css animation timing function. Gives the slide a swing. Options are :
-* `linear`
-* `ease`
-* `ease-in`
-* `ease-out`
-* `ease-in-out`
-* `cubic-bezier(x1, y1, x2, y2)` see http://cubic-bezier.com (Made by the brilliant [@LeaVerou](https://twitter.com/LeaVerou))
+* `'linear'`
+* `'ease'`
+* `'ease-in'`
+* `'ease-out'`
+* `'ease-in-out'`
+* `'cubic-bezier(x1, y1, x2, y2)'` see http://cubic-bezier.com (Made by the brilliant [@LeaVerou](https://twitter.com/LeaVerou))
 
 #### animType
 Type `String`
-Default `normal`
+Default `'normal'`
 
 Want to annoy your visitors, but please the marketing department ? This slider has a few custom transition animations available. Options are :
-* `normal` Default value. Smooth slides from right to left.
-* `flip` Flips each slide 360 degs top to bottom.
-* `spin` Spins slides around.
-* `twirl` Skews each slide full circle.
+* `'normal'` Default value. Smooth slides from right to left.
+* `'flip'` Flips each slide 360 degs top to bottom.
+* `'spin'` Spins slides around.
+* `'twirl'` Skews each slide full circle.
 
 ```js
 handyCAPSLider.init({

@@ -1,4 +1,4 @@
-/*! handyCAPSSLider - v0.1.0 - 2014-05-05
+/*! handyCAPSSLider - v0.1.0 - 2014-05-06
 * Copyright (c) 2014 handyCAPS; Licensed MIT */
 function HandyCAPSSlider(cont)  {
 
