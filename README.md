@@ -6,6 +6,11 @@ HandyCAPSSlider
 
 A slider made for practice, turned out pretty useful. Simply add classes to the container, items, and captions and a single line of js gets the thing sliding. Add configuration options by passing an object literal to the init function.
 
+Demo
+----
+A demo page is set up to give you an impression of the slider. You can find the
+demo on this [slider demo page](https://handycaps.github.io/handyCAPSSlider/).
+
 Installation
 ------------
 
