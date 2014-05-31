@@ -345,11 +345,11 @@ function HandyCAPSSlider(cont)  {
 		// Stop the slides
 		this.stopSlides();
 
-		this.highlightBul(miniNum);
 		this.resetBul(this.i);
+		this.highlightBul(miniNum);
 
-		this.hightlightMinis(miniNum);
 		this.resetMinis(this.i);
+		this.hightlightMinis(miniNum);
 
 		this.i = miniNum - 1;
 		this.goToSlide();
