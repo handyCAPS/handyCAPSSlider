@@ -246,22 +246,21 @@ function HandyCAPSSlider(cont)  {
 		if (this.doMinis && this.blowMinis) {
 			var minis = document.querySelector('.miniJack').children;
 
-			this.hightlightMinis(bulNum - 1);
-
 			this.resetMinis(this.i);
 
+			this.hightlightMinis(bulNum - 1);
 		}
 
-		// Highlight the clicked bullet
-		clickedBul.style.backgroundColor = this.bulAltCol;
 		// Reset styling on bullet we're moving away from
 		// allBullets[this.i].style.backgroundColor = this.bulColor;
 		this.resetBul(this.i);
-		// Set the global itterator to the corresponding slide
+		// Highlight the clicked bullet
+		clickedBul.style.backgroundColor = this.bulAltCol;
+		// Set the global iterator to the corresponding slide
 		this.i = bulNum - 2;
 		// Go to that slide
 		this.goToSlide();
-		// Bump the global itterator
+		// Bump the global iterator
 		this.i++;
 		// Restart the slider
 		this.startSlides();
@@ -346,11 +345,11 @@ function HandyCAPSSlider(cont)  {
 		// Stop the slides
 		this.stopSlides();
 
-		this.highlightBul(miniNum);
 		this.resetBul(this.i);
+		this.highlightBul(miniNum);
 
-		this.hightlightMinis(miniNum);
 		this.resetMinis(this.i);
+		this.hightlightMinis(miniNum);
 
 		this.i = miniNum - 1;
 		this.goToSlide();
