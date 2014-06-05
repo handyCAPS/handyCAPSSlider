@@ -53,9 +53,8 @@ function HandyCAPSSlider(cont)  {
 
 		// Split the hex into pairs
 		for (var j = 0; j < 6; j = j + 2) {
-			var sec = parseInt(j + 1, 10);
 			// Parse hex to integer
-			rgbArray.push(parseInt(color[j] + color[sec], 16));
+			rgbArray.push(parseInt(color[j] + color[j+1], 16));
 		}
 
 		var rgbColor = "rgb(" + rgbArray.join(',') + ")";
