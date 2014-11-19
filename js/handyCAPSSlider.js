@@ -53,9 +53,8 @@ function HandyCAPSSlider(cont)  {
 
 		// Split the hex into pairs
 		for (var j = 0; j < 6; j = j + 2) {
-			var sec = parseInt(j + 1, 10);
 			// Parse hex to integer
-			rgbArray.push(parseInt(color[j] + color[sec], 16));
+			rgbArray.push(parseInt(color[j] + color[j+1], 16));
 		}
 
 		var rgbColor = "rgb(" + rgbArray.join(',') + ")";
@@ -70,14 +69,11 @@ function HandyCAPSSlider(cont)  {
 	 * @return {String}       Altered color, as string containing rgb value
 	 */
 	this.brightness = function(perc, color) {
-		var rgbString = color,
-		alteredColor = "";
-
 		if (/#/.test(color)) {
-			rgbString = this.hexToRgb(color);
+			color = this.hexToRgb(color);
 		}
 
-		var numbers = rgbString.replace(/[^0-9,]/g, '');
+		var numbers = color.replace(/[^0-9,]/g, '');
 		var cArray = numbers.split(',');
 
 		for (var i = 0; i < cArray.length; i++) {
@@ -87,7 +83,7 @@ function HandyCAPSSlider(cont)  {
 			cArray[i] = newColor;
 		}
 
-		alteredColor = "rgb(" + cArray.join(',') + ")";
+		var alteredColor = "rgb(" + cArray.join(',') + ")";
 
 		return alteredColor;
 
